@@ -15,6 +15,7 @@
 #navbar{
     background-color: var(--bgcolor);
     display: flex;
+    position: sticky;
     align-items: center;
     justify-content: space-between;
 }
