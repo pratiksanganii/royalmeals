@@ -16,6 +16,7 @@
     background-color: var(--bgcolor);
     display: flex;
     position: sticky;
+    top: 0;
     align-items: center;
     justify-content: space-between;
 }
