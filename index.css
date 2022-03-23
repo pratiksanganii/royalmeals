@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bgcolor: rgb(163, 85, 179, 0.5);
+}
+
+#logo{
+    height: 50px;
+    margin-left: 10px;
+}
+
+#navbar{
+    background-color: var(--bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar::before{
+    position: absolute;
+    top: 0;
+    height: 1650px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    opacity: 0.3;
+    background: url('img/bg.jpg');
+}
+
+#navitems{
+    display: flex;
+}
+
+#navitems li{
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 1px;
+    list-style: none;
+    margin: 30px 30px;
+}
+
+.item{
+    text-decoration: none;
+    color: white;  
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+.item:hover{
+    color: var(--bgcolor);
+    background-color: white;
+}
+
+#navtoggler{
+    display: none;
+    height: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+#homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bgcolor);
+    align-items: center;
+    margin: 25px auto;
+    border: 1px solid black;
+    width: 80%;
+}
+
+#homepage h1{
+    margin-top: 10px;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 1px;
+    font-size: xx-large;
+}
+
+#homepage p{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+
+#orderbtn{
+    margin-bottom: 10px;
+    color: white;  
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: var(--bgcolor);
+    transition-duration: 1s;
+    cursor: pointer;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 1px;
+}
+
+#orderbtn:hover{
+    color: var(--bgcolor);
+    background-color: white;
+}
+
+.txtcntr{
+    text-align: center;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bgcolor);
+    align-items: center;
+    margin: 25px auto;
+    border: 1px solid black;
+    width: 80%;
+}
+
+#services h1{
+    font-size: xx-large;
+}
+
+#srvclst{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px auto;
+    border: 1px solid wheat;
+}
+
+.srvc{
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.srvc img{
+    width: 250px;
+    height: 250px;
+}
+
+#clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bgcolor);
+    align-items: center;
+    margin: auto auto;
+    border: 1px solid black;
+    width: 80%;
+}
+
+#clients h1{
+    font-size: xx-large;
+}
+
+#clntlogos img{
+    width: 200px;
+    margin: auto 25px;
+}
+
+#clntlogos{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+    width: 100%;
+}
+
+#cntct{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: var(--bgcolor);
+    margin: 25px auto;
+    border: 1px solid black;
+    font-family: 'League Gothic', sans-serif;
+}
+
+#cntct h1{
+    font-size: xx-large;
+}
+
+#cntctinpt{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#cprght{
+    width: 100%;
+    background-color: var(--bgcolor);
+    color: black;
+    padding: 25px auto;
+    font-size: x-large;
+}
